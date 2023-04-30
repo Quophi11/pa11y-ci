@@ -1,18 +1,7 @@
 
 {
-    "defaults": {
-        "timeout": 1000000,
-        "reporters": [
-            "cli", 
-            "pa11y-reporter-html"
-        ]
-    },
     "urls": [
         "https://pa11y.org/",
-        {
-            "url": "https://pa11y.org/contributing",
-            "timeout": 60000,
-            "screenCapture": "my-screen-capture.png"
-        }
+        "https://pa11y.org/contributing"
     ]
 }
