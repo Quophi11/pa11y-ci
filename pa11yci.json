@@ -1,7 +1,15 @@
 
 {
-    "urls": [
-        "https://pa11y.org/",
-        "https://pa11y.org/contributing"
-    ]
-}
+   
+        "defaults": {
+            "timeout": 10000
+        },
+        "urls": [
+            "https://pa11y.org/",
+            {
+                "url": "https://pa11y.org/contributing",
+                "timeout": 50000,
+                "screenCapture": "myDir/my-screen-capture.png"
+            }
+        ]
+    }
