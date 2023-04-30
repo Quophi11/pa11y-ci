@@ -1,0 +1,18 @@
+
+{
+    "defaults": {
+        "reporters": [
+            "cli",
+            "pa11y-reporter-html",
+            "./my-local-reporter.js"
+        ]
+    },
+    "urls": [
+        "https://pa11y.org/",
+        {
+            "url": "https://pa11y.org/contributing",
+            "timeout": 60000,
+            "screenCapture": "my-screen-capture.png"
+        }
+    ]
+}
