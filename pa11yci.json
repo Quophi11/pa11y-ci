@@ -5,7 +5,7 @@
             //"cli",
             //"pa11y-reporter-html",
             //"my-local-reporter.js"
-        ]
+        //]
     },
     "urls": [
         "https://pa11y.org/",
