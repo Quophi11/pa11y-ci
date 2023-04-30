@@ -3,7 +3,7 @@
 
 name: Pa11y accessibility test
 
-on: [E-450-pa11y]
+on: [push]
 
 jobs:
   test:
