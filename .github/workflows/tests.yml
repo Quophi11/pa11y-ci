@@ -18,7 +18,7 @@ jobs:
         node-version: '14'
 
     - name: Install dependencies
-      run: npm install
+      run: npm install -g pa11y-ci
 
     - name: Run pa11y accessibility test
       run: npm run pa11y
