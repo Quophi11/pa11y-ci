@@ -1,6 +1,8 @@
 
 {
-    
+    "defaults": {
+        "timeout": 50000
+    },
     "urls": [
         "https://pa11y.org/",
         {
