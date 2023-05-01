@@ -1,8 +1,4 @@
 {
-    "urls": [
-     {
-       "url": "https://www.pa11y.org/"
-
-     }
-    ]
-}
+    "urls": ["http://localhost:3000/"]
+  }
+  
