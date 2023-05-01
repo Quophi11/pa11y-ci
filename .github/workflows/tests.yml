@@ -21,7 +21,7 @@ jobs:
       run: npm install -g pa11y-ci
 
     - name: Run pa11y accessibility test
-      run: npm run pa11y
+      run: npm run pa11y-ci
 
     - name: Upload pa11y report
       uses: actions/upload-artifact@v2.2.4
