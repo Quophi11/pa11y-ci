@@ -21,7 +21,7 @@ jobs:
       run: npm install -g pa11y-ci
 
     - name: Run pa11y accessibility test
-      run: npm run pa11y-ci --sitemap https://pa11y.org/sitemap.xml 2>&1 | tee pa11y-report
+      run: npm exec pa11y-ci --sitemap https://pa11y.org/sitemap.xml 2>&1 | tee pa11y-report
 
     - name: Upload pa11y report
       uses: actions/upload-artifact@v2.2.4
