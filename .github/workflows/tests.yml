@@ -3,28 +3,32 @@
 
 name: Pa11y accessibility test
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2.1.2
-      with:
-        node-version: '14'
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '14'
 
-    - name: Install dependencies
-      run: npm install -g pa11y-ci
+      - name: Install dependencies
+        run: npm install -g pa11y-ci
 
-    - name: Run pa11y accessibility test
-      run: pa11y-ci --sitemap https://pa11y.org/sitemap.xml 2>&1 | tee pa11y-report
+      - name: Run pa11y accessibility test
+        run: pa11y-ci --sitemap https://pa11y.org/sitemap.xml 2>&1 | tee pa11y-report.json
 
-    - name: Upload pa11y report
-      uses: actions/upload-artifact@v2.2.4
-      with:
-        name: pa11y-report
-        path: report.json
+      - name: Upload pa11y report
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: pa11y-report
+          path: pa11y-report.json
