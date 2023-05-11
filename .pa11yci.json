@@ -3,10 +3,8 @@
         "timeout": 5000,
         "viewport": {
             "width": 320,
-            "height": 480,
-        "reporters": [
-            
-        ]
+            "height": 480
+        
         }
     }
 }
