@@ -35,6 +35,7 @@
     "mocha": "^10.2.0",
     "mockery": "^2.1.0",
     "nyc": "^15.1.0",
+    "pa11y-ci": "^3.0.1",
     "pa11y-lint-config": "^2.0.0",
     "pa11y-reporter-html": "^2.0.0",
     "proclaim": "^3.6.0",
@@ -51,10 +52,13 @@
     "test-coverage": "nyc --reporter=text --reporter=html mocha --file test/unit/setup.test.js 'test/unit/**/*.test.js' --recursive",
     "test-integration": "mocha --file test/integration/setup.test.js 'test/integration/**/*.test.js' test/integration/teardown.test.js --recursive --timeout 10000 --slow 5000",
     "test": "npm run test-coverage && npm run verify-coverage && npm run test-integration",
-    "pa11y": "pa11y-ci --config pa11yci.json"
+    "pa11y": "pa11y-ci --config pa11yci.json",
+    "start-detached": "bundle exec jekyll serve --detach",
+    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\""
   },
   "files": [
     "bin",
     "lib"
   ]
 }
+

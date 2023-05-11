@@ -1,0 +1,27 @@
+{
+    "defaults": {
+        "timeout": 4000,
+        "viewport": {
+            "width": 320,
+            "height": 480,
+        "reporters": [
+            "cli",
+            "pa11y-reporter-html",
+            "./my-local-reporter.js"
+        ]
+        }
+    },
+    "urls": [
+       
+"https://www.npmjs.com/",
+        
+        {
+            
+            "url":"https://www.npmjs.com/login",
+            "timeout": 50000,
+            "screenCapture": "myDir/my-screen-capture.png"
+    
+        }
+        
+    ]
+}
