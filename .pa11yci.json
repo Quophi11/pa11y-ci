@@ -1,9 +1,17 @@
 {
     "defaults": {
         "timeout": 6000,
-        "standard": "WCAG2A"
-                
-        }
-    }
-
+        "standard": "WCAG2A",
+        "reporters": [
+                        [
+              "pa11y-ci-reporter-html",
+              { "destination": "./pa11y-ci", "includeZeroIssues": true }
+            ]
+          ]
+        },
+        "urls": ["https://pa11y.org/sitemap.xml"]
+      } 
+        
+        
     
+
