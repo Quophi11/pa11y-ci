@@ -1,11 +1,9 @@
 {
     "defaults": {
-        "timeout": 5000,
-        "viewport": {
-            "width": 320,
-            "height": 480
-        
+        "timeout": 6000,
+        "standard": "WCAG2A"
+                
         }
     }
-}
+
     
