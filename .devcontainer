@@ -1,0 +1,9 @@
+{
+  "image": "node:lts",
+  "extensions": [
+    "ms-vscode.node-essentials"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
